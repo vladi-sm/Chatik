@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A7B869AAC96D6D04E1A5129 /* Pods_Chatik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D994D13C1DEED9CFD548A0CE /* Pods_Chatik.framework */; };
+		820B14282807275C00C1BFD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 820B14272807275C00C1BFD9 /* GoogleService-Info.plist */; };
+		8212927127EB7B180097D141 /* MainFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8212927027EB7B180097D141 /* MainFileManager.swift */; };
+		8212927327EB7B270097D141 /* Managers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8212927227EB7B270097D141 /* Managers.swift */; };
+		8230B81E27E06BB1002C2134 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230B81D27E06BB1002C2134 /* ConversationViewController.swift */; };
+		823183392811EAB000DB13B3 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823183382811EAB000DB13B3 /* DependencyContainer.swift */; };
+		8232DDC627F58BB00030C5D6 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8232DDC427F58BB00030C5D6 /* ChannelCell.swift */; };
+		8232DDC727F58BB00030C5D6 /* ChannelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8232DDC527F58BB00030C5D6 /* ChannelCell.xib */; };
+		8232DDC927F5BB6C0030C5D6 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8232DDC827F5BB6C0030C5D6 /* FirebaseService.swift */; };
+		82448E4627FF510500BED744 /* ChatikCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82448E4427FF510500BED744 /* ChatikCoreData.xcdatamodeld */; };
+		82448E4827FF537C00BED744 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82448E4727FF537C00BED744 /* CoreDataService.swift */; };
+		8245742B27CFC35E00A71EE6 /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8245742A27CFC35E00A71EE6 /* ConversationListViewController.swift */; };
+		8252E2A927D92E7000C46E51 /* ChatikAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8252E2A827D92E7000C46E51 /* ChatikAppModel.swift */; };
+		82609CE927C141800032702D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82609CE827C141800032702D /* AppDelegate.swift */; };
+		82609CF027C141800032702D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82609CEE27C141800032702D /* Main.storyboard */; };
+		82609CF227C141820032702D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82609CF127C141820032702D /* Assets.xcassets */; };
+		82609CF527C141820032702D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82609CF327C141820032702D /* LaunchScreen.storyboard */; };
+		8262D5F227E1E503001DA7A8 /* SendingMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8262D5F027E1E503001DA7A8 /* SendingMessageCell.swift */; };
+		8262D5F327E1E503001DA7A8 /* SendingMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8262D5F127E1E503001DA7A8 /* SendingMessageCell.xib */; };
+		8279C31927CBF55F002F9474 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8279C31827CBF55F002F9474 /* ProfileViewController.swift */; };
+		828A83B827E33DF40035C718 /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828A83B727E33DF40035C718 /* ThemesViewController.swift */; };
+		82AA2A4C27E2060600445599 /* InMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AA2A4A27E2060600445599 /* InMessageCell.swift */; };
+		82AA2A4D27E2060600445599 /* InMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82AA2A4B27E2060600445599 /* InMessageCell.xib */; };
+		82F56BC827E3B5CA00E23C81 /* ThemeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F56BC727E3B5CA00E23C81 /* ThemeCell.xib */; };
+		82F56BCA27E3B96200E23C81 /* ThemeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F56BC927E3B96200E23C81 /* ThemeCell.swift */; };
+		82F56BCC27E3CEA700E23C81 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F56BCB27E3CEA700E23C81 /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		45833E858CA608F3A5681F82 /* Pods-Chatik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatik.debug.xcconfig"; path = "Target Support Files/Pods-Chatik/Pods-Chatik.debug.xcconfig"; sourceTree = "<group>"; };
+		80DE570E8264A0677F672818 /* Pods-Chatik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatik.release.xcconfig"; path = "Target Support Files/Pods-Chatik/Pods-Chatik.release.xcconfig"; sourceTree = "<group>"; };
+		820B14272807275C00C1BFD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8212927027EB7B180097D141 /* MainFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFileManager.swift; sourceTree = "<group>"; };
+		8212927227EB7B270097D141 /* Managers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managers.swift; sourceTree = "<group>"; };
+		8230B81D27E06BB1002C2134 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		823183382811EAB000DB13B3 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		8232DDC427F58BB00030C5D6 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
+		8232DDC527F58BB00030C5D6 /* ChannelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelCell.xib; sourceTree = "<group>"; };
+		8232DDC827F5BB6C0030C5D6 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		82448E4527FF510500BED744 /* ChatikCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChatikCoreData.xcdatamodel; sourceTree = "<group>"; };
+		82448E4727FF537C00BED744 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		8245742A27CFC35E00A71EE6 /* ConversationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListViewController.swift; sourceTree = "<group>"; };
+		8252E2A827D92E7000C46E51 /* ChatikAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatikAppModel.swift; sourceTree = "<group>"; };
+		82609CE527C141800032702D /* Chatik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82609CE827C141800032702D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82609CEF27C141800032702D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82609CF127C141820032702D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82609CF427C141820032702D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82609CF627C141820032702D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8262D5F027E1E503001DA7A8 /* SendingMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingMessageCell.swift; sourceTree = "<group>"; };
+		8262D5F127E1E503001DA7A8 /* SendingMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendingMessageCell.xib; sourceTree = "<group>"; };
+		8279C31827CBF55F002F9474 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		828A83B727E33DF40035C718 /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
+		82AA2A4A27E2060600445599 /* InMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMessageCell.swift; sourceTree = "<group>"; };
+		82AA2A4B27E2060600445599 /* InMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InMessageCell.xib; sourceTree = "<group>"; };
+		82F56BC727E3B5CA00E23C81 /* ThemeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThemeCell.xib; sourceTree = "<group>"; };
+		82F56BC927E3B96200E23C81 /* ThemeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCell.swift; sourceTree = "<group>"; };
+		82F56BCB27E3CEA700E23C81 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D994D13C1DEED9CFD548A0CE /* Pods_Chatik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82609CE227C141800032702D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A7B869AAC96D6D04E1A5129 /* Pods_Chatik.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		506030823352576AB2B7FBB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45833E858CA608F3A5681F82 /* Pods-Chatik.debug.xcconfig */,
+				80DE570E8264A0677F672818 /* Pods-Chatik.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8212926F27EB7AF00097D141 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8212927027EB7B180097D141 /* MainFileManager.swift */,
+				8212927227EB7B270097D141 /* Managers.swift */,
+				8232DDC827F5BB6C0030C5D6 /* FirebaseService.swift */,
+				821DDD4727F9EB4B00C2224F /* CoreData */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		821DDD4727F9EB4B00C2224F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				82448E4427FF510500BED744 /* ChatikCoreData.xcdatamodeld */,
+				82448E4727FF537C00BED744 /* CoreDataService.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		823579FB27D7B35E003352D5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8262D5F027E1E503001DA7A8 /* SendingMessageCell.swift */,
+				8262D5F127E1E503001DA7A8 /* SendingMessageCell.xib */,
+				82AA2A4A27E2060600445599 /* InMessageCell.swift */,
+				82AA2A4B27E2060600445599 /* InMessageCell.xib */,
+				8232DDC427F58BB00030C5D6 /* ChannelCell.swift */,
+				8232DDC527F58BB00030C5D6 /* ChannelCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8252E2A727D92AB900C46E51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8252E2A827D92E7000C46E51 /* ChatikAppModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		82609CDC27C141800032702D = {
+			isa = PBXGroup;
+			children = (
+				82609CE727C141800032702D /* Chatik */,
+				82609CE627C141800032702D /* Products */,
+				506030823352576AB2B7FBB6 /* Pods */,
+				D1F8953B33101C0D73E9FA47 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		82609CE627C141800032702D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82609CE527C141800032702D /* Chatik.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82609CE727C141800032702D /* Chatik */ = {
+			isa = PBXGroup;
+			children = (
+				820B14272807275C00C1BFD9 /* GoogleService-Info.plist */,
+				8252E2A727D92AB900C46E51 /* Model */,
+				82609CE827C141800032702D /* AppDelegate.swift */,
+				8245742A27CFC35E00A71EE6 /* ConversationListViewController.swift */,
+				823183382811EAB000DB13B3 /* DependencyContainer.swift */,
+				8230B81D27E06BB1002C2134 /* ConversationViewController.swift */,
+				828A83B727E33DF40035C718 /* ThemesViewController.swift */,
+				8279C31827CBF55F002F9474 /* ProfileViewController.swift */,
+				82F56BCB27E3CEA700E23C81 /* Extensions.swift */,
+				8212926F27EB7AF00097D141 /* Services */,
+				82F56BC327E3AEE900E23C81 /* Buttons */,
+				823579FB27D7B35E003352D5 /* Cells */,
+				82609CEE27C141800032702D /* Main.storyboard */,
+				82609CF127C141820032702D /* Assets.xcassets */,
+				82609CF327C141820032702D /* LaunchScreen.storyboard */,
+				82609CF627C141820032702D /* Info.plist */,
+			);
+			path = Chatik;
+			sourceTree = "<group>";
+		};
+		82F56BC327E3AEE900E23C81 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				82F56BC727E3B5CA00E23C81 /* ThemeCell.xib */,
+				82F56BC927E3B96200E23C81 /* ThemeCell.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		D1F8953B33101C0D73E9FA47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D994D13C1DEED9CFD548A0CE /* Pods_Chatik.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82609CE427C141800032702D /* Chatik */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82609CF927C141820032702D /* Build configuration list for PBXNativeTarget "Chatik" */;
+			buildPhases = (
+				70A937D968FB18B400042FF3 /* [CP] Check Pods Manifest.lock */,
+				82609CE127C141800032702D /* Sources */,
+				82609CE227C141800032702D /* Frameworks */,
+				82609CE327C141800032702D /* Resources */,
+				D6DCD091DF9433CBFF10FF78 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chatik;
+			productName = Chatik;
+			productReference = 82609CE527C141800032702D /* Chatik.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82609CDD27C141800032702D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					82609CE427C141800032702D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 82609CE027C141800032702D /* Build configuration list for PBXProject "Chatik" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82609CDC27C141800032702D;
+			productRefGroup = 82609CE627C141800032702D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82609CE427C141800032702D /* Chatik */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82609CE327C141800032702D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82AA2A4D27E2060600445599 /* InMessageCell.xib in Resources */,
+				82F56BC827E3B5CA00E23C81 /* ThemeCell.xib in Resources */,
+				820B14282807275C00C1BFD9 /* GoogleService-Info.plist in Resources */,
+				8262D5F327E1E503001DA7A8 /* SendingMessageCell.xib in Resources */,
+				82609CF527C141820032702D /* LaunchScreen.storyboard in Resources */,
+				82609CF227C141820032702D /* Assets.xcassets in Resources */,
+				8232DDC727F58BB00030C5D6 /* ChannelCell.xib in Resources */,
+				82609CF027C141800032702D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70A937D968FB18B400042FF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chatik-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6DCD091DF9433CBFF10FF78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chatik/Pods-Chatik-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chatik/Pods-Chatik-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chatik/Pods-Chatik-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82609CE127C141800032702D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82448E4827FF537C00BED744 /* CoreDataService.swift in Sources */,
+				8212927127EB7B180097D141 /* MainFileManager.swift in Sources */,
+				823183392811EAB000DB13B3 /* DependencyContainer.swift in Sources */,
+				8232DDC927F5BB6C0030C5D6 /* FirebaseService.swift in Sources */,
+				8262D5F227E1E503001DA7A8 /* SendingMessageCell.swift in Sources */,
+				82448E4627FF510500BED744 /* ChatikCoreData.xcdatamodeld in Sources */,
+				8252E2A927D92E7000C46E51 /* ChatikAppModel.swift in Sources */,
+				82F56BCC27E3CEA700E23C81 /* Extensions.swift in Sources */,
+				82F56BCA27E3B96200E23C81 /* ThemeCell.swift in Sources */,
+				8232DDC627F58BB00030C5D6 /* ChannelCell.swift in Sources */,
+				82AA2A4C27E2060600445599 /* InMessageCell.swift in Sources */,
+				828A83B827E33DF40035C718 /* ThemesViewController.swift in Sources */,
+				8245742B27CFC35E00A71EE6 /* ConversationListViewController.swift in Sources */,
+				8279C31927CBF55F002F9474 /* ProfileViewController.swift in Sources */,
+				8212927327EB7B270097D141 /* Managers.swift in Sources */,
+				8230B81E27E06BB1002C2134 /* ConversationViewController.swift in Sources */,
+				82609CE927C141800032702D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		82609CEE27C141800032702D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82609CEF27C141800032702D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		82609CF327C141820032702D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82609CF427C141820032702D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82609CF727C141820032702D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82609CF827C141820032702D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82609CFA27C141820032702D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45833E858CA608F3A5681F82 /* Pods-Chatik.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 36DND5GXF5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Chatik/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Выбор фото";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.tinkoff.TinkoffChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		82609CFB27C141820032702D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80DE570E8264A0677F672818 /* Pods-Chatik.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 36DND5GXF5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Chatik/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Выбор фото";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.tinkoff.TinkoffChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82609CE027C141800032702D /* Build configuration list for PBXProject "Chatik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82609CF727C141820032702D /* Debug */,
+				82609CF827C141820032702D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82609CF927C141820032702D /* Build configuration list for PBXNativeTarget "Chatik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82609CFA27C141820032702D /* Debug */,
+				82609CFB27C141820032702D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		82448E4427FF510500BED744 /* ChatikCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				82448E4527FF510500BED744 /* ChatikCoreData.xcdatamodel */,
+			);
+			currentVersion = 82448E4527FF510500BED744 /* ChatikCoreData.xcdatamodel */;
+			path = ChatikCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 82609CDD27C141800032702D /* Project object */;
+}

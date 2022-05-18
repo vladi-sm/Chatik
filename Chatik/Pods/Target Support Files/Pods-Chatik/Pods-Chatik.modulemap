@@ -1,0 +1,6 @@
+framework module Pods_Chatik {
+  umbrella header "Pods-Chatik-umbrella.h"
+
+  export *
+  module * { export * }
+}
